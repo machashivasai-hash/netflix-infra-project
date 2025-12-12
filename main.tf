@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "one" {
-  count                  = 4
+  count                  = 3
   ami                    = "ami-0fa91bc90632c73c9"
   instance_type          = "c7i-flex.large"
   key_name               = "AMAZONWEB"
@@ -14,5 +14,5 @@ resource "aws_instance" "one" {
 }
 
 variable "instance_names" {
-  default = ["jenkins", "tomcat-1", "tomcat-2", "Monitoring server"]
+  default = ["jenkins", "tomcat-1", "Monitoring server"]
 }
