@@ -1,10 +1,10 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "eu-north-1"
 }
 
 resource "aws_instance" "one" {
   count                  = 3
-  ami                    = "ami-02b8269d5e85954ef"
+  ami                    = "ami-01fd6fa49060e89a6"
   instance_type          = "c7i-flex.large"
   key_name               = "AMAZONWEB"
   vpc_security_group_ids = ["sg-0b2aa229ec61b4f56"]
