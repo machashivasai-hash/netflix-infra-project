@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "one" {
   count                  = 3
-  ami                    = "ami-0b46816ffa1234887"
+  ami                    = "ami-0fa91bc90632c73c9"
   instance_type          = "c7i-flex.large"
   key_name               = "AMAZONWEB"
   vpc_security_group_ids = ["sg-0fce156bf5c3972dd"]
